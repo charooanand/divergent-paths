@@ -4,7 +4,7 @@ services:
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn apps.multi:server
+    startCommand: gunicorn apps.multi:server --chdir .
     envVars:
       - key: PYTHONUNBUFFERED
         value: "1"
