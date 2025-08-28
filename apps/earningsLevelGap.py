@@ -7,8 +7,8 @@ import plotly.express as px
 import plotly.io as pio
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
-from helpers import readData
-from helpers import ordinal
+from apps.helpers import readData
+from apps.helpers import ordinal
 
 dfAll, dfNonZero = readData()
 
