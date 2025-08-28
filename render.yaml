@@ -1,20 +1,10 @@
 services:
   - type: web
-    name: earnings-level-gap
+    name: earnings-gap-apps
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn apps.earningsLevelGap:server
-    envVars:
-      - key: PYTHONUNBUFFERED
-        value: "1"
-
-  - type: web
-    name: earnings-rank-gap
-    env: python
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn apps.earningsRankGap:server
+    startCommand: gunicorn apps.multi:server
     envVars:
       - key: PYTHONUNBUFFERED
         value: "1"
