@@ -1,13 +1,3 @@
-import dash
-from dash import Dash, dcc, html, Input, Output
-import pandas as pd
-from scipy.stats import percentileofscore
-import math
-import numpy as np
-import plotly.express as px
-import plotly.io as pio
-from plotly.subplots import make_subplots
-import plotly.graph_objects as go
 from apps.helpers import readData
 from apps.helpers import ordinal
 
