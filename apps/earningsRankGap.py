@@ -7,7 +7,6 @@ from scipy.stats import percentileofscore
 
 from helpers import readData, ordinal
 
-# Load data once at import time
 dfAll, dfNonZero = readData()
 
 def earningsRankGapHisto(df, y, xrange, binSize,
