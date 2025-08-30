@@ -1,21 +1,35 @@
-# Earnings Apps (Render-ready)
 
-Two Plotly Dash apps served behind one Flask server on Render.
+---
 
-## Structure
-- `/rank/` → Earnings Rank Gap
-- `/level/` → Earnings Level Gap
+## Deployment
 
-## Local run
-```bash
-pip install -r requirements.txt
-export PORT=8000
-python multi.py
-# or with gunicorn
-gunicorn -w 2 -k gthread -b 0.0.0.0:$PORT multi:server
-```
+### Dash Apps (Render)
+- Both Dash apps are wrapped by a Flask server (`multi.py`) and deployed to Render.  
+- Render runs the service with Gunicorn (`multi:server`) as defined in `render.yaml`.  
+- Accessible at:  
+  - Earnings Level Gap → [https://divergent-paths-7.onrender.com/level/](https://divergent-paths-7.onrender.com/level/)  
+  - Earnings Rank Gap → [https://divergent-paths-7.onrender.com/rank/](https://divergent-paths-7.onrender.com/rank/)
+    (because it took me 7 attempts to correctly deploy)
 
-## Deploy on Render
-- Connect this repo
-- Render auto-detects `render.yaml`
-- Start command: `gunicorn -w 2 -k gthread -b 0.0.0.0:$PORT multi:server`
+### Static Website (GitHub Pages)
+- The `docs/` folder is published via GitHub Pages.  
+- It contains a scrollytelling narrative that embeds the Dash apps using `<iframe>`.  
+- Accessible at:  
+  - [https://charooanand.github.io/divergent-paths/](https://charooanand.github.io/divergent-paths/)
+
+---
+
+## Tech Stack
+
+- **Dash** (Plotly + React) for interactive histograms.  
+- **Flask** to host multiple Dash apps under one server.  
+- **Gunicorn** production WSGI server (on Render).  
+- **scrollama.js** for the scrollytelling narrative.  
+- **GitHub Pages** for static site hosting.  
+
+---
+
+## Citation
+
+Bayer, P., & Charles, K. K. (2018). *Divergent paths: A new perspective on earnings differences between black and white men since 1940*.  
+The Quarterly Journal of Economics, 133(3), 1459–1501.
