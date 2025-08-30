@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: earnings-gap-apps
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 2 -k gthread -b 0.0.0.0:$PORT multi:server
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
