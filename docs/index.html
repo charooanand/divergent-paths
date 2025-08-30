@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Divergent Paths</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
+
   <h1 id="title">Divergent Paths</h1>
   <h2 id="subtitle">A New Perspective On Earnings Differences Between Black And White Men Since 1940</h2>
 
@@ -19,11 +21,14 @@
       <div class="spacer100"></div>
 
       <div class="step-intro" data-step="1">
-        The second half of the 20th century began with progressivist hopes for racial equality...
+        The second half of the 20th century began with progressivist hopes for racial equality – or at least a march towards it.
+        In particular, the 1950s and '60s ushered in landmark gains for African Americans in the form of desegregation, Civil Rights and Voting Rights.
       </div>
 
       <div class="step-intro" data-step="2">
-        But did legislative gains translate to economic advancement? Bayer &amp; Charles (2018)…
+        But did legislative gains translate to economic advancement?
+        Bayer &amp; Charles (2018) revise current understanding on the Black-White earnings gaps in the US.
+        By looking beyond simple differences in average incomes, their analysis paints a richer picture of income inequality.
       </div>
     </div>
   </div>
@@ -34,9 +39,16 @@
     <h3 id="section-headings">The Earnings Level Gap</h3>
   </div>
 
-  <p>In the graph below you can see the income distributions for White and Black men across decades…</p>
+  <p>
+    If we're thinking about how much more White men earned compared to their Black counterparts, a natural measure is to compare the median income of a White man to that of a Black man. 
+    This is a simple and informative statistic. However, the median tells us about the experience of very specific people – two men who are right in the middle of their group's income distribution.
+    What about two men who are top earners? Or two men at the 15th percentile? Those comparisons are also informative.
+  </p>
 
-  <!-- Level app -->
+  <p>
+    In the graph below you can see the income distributions for White and Black men across decades. By hovering over the bars you can observe the income level for each group at the same percentile, and the associated earnings gap.
+  </p>
+
   <div class="iframe-wrap">
     <iframe
       src="https://divergent-paths-7.onrender.com/level/"
@@ -50,9 +62,15 @@
     <h3 id="section-headings">The Earnings Rank Gap</h3>
   </div>
 
-  <p>In the graph below you can see the same income distributions as before…</p>
+  <p>
+    Another way to measure differences is to ask: where would a Black man's earnings place him within the White income distribution? 
+    For example, if the median Black man earned $30k, that puts him at the 50th percentile among Black men, but maybe only the 20th percentile among White men — a 30-point gap.
+  </p>
 
-  <!-- Rank app -->
+  <p>
+    In the graph below, when you hover over the bars, you can see the percentile within each group's distribution that corresponds to an income level.
+  </p>
+
   <div class="iframe-wrap">
     <iframe
       src="https://divergent-paths-7.onrender.com/rank/"
@@ -62,8 +80,9 @@
     ></iframe>
   </div>
 
-  <h5 id="citation">
-    Bayer, P., &amp; Charles, K. K. (2018). Divergent paths: A new perspective on earnings differences between black and white men since 1940. <em>The Quarterly Journal of Economics</em>, 133(3), 1459–1501.
+  <h5 id="citation"> 
+    Bayer, P., &amp; Charles, K. K. (2018). Divergent paths: A new perspective on earnings differences between black and white men since 1940. 
+    <em>The Quarterly Journal of Economics</em>, 133(3), 1459–1501.
   </h5>
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
