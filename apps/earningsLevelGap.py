@@ -6,7 +6,7 @@ from dash import Dash, dcc, html, Input, Output, exceptions
 
 from helpers import readData, ordinal
 
-# Load once per worker
+
 dfAll, dfNonZero = readData()
 
 
