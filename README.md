@@ -33,3 +33,5 @@
 
 Bayer, P., & Charles, K. K. (2018). *Divergent paths: A new perspective on earnings differences between black and white men since 1940*.  
 The Quarterly Journal of Economics, 133(3), 1459–1501.
+
+Note that this version uses a 1% sample of the microdata.
