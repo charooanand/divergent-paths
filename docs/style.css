@@ -149,3 +149,17 @@ figure {
 .spacer100 {
   height: 60vh; /* adjust to delay text entry more or less */
 }
+
+
+.iframe-wrap { width: 100%; margin: 0 auto 24px; }
+.iframe-wrap iframe {
+  width: 100%;
+  height: 800px;    /* desktop default */
+  border: none;
+  display: block;
+}
+
+/* Reduce height on small screens */
+@media (max-width: 600px) {
+  .iframe-wrap iframe { height: 600px; }
+}
