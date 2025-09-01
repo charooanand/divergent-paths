@@ -149,19 +149,3 @@ figure {
 .spacer100 {
   height: 60vh; /* adjust to delay text entry more or less */
 }
-
-
-.iframe-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0; /* optional spacing */
-}
-
-.iframe-wrap iframe {
-  border: none;
-  overflow: hidden;
-  width: 100%;
-  height: 800px;
-}
-
